@@ -1,15 +1,21 @@
 package main
 
 import (
-    "fmt"
-    "advent2025/services"
+	"advent2025/services"
+	"fmt"
 )
 
 func main() {
-    fmt.Println("Hello there, advent of code 2025")
-    fmt.Println("Day one")
-    resultDayOnePartOne := services.DayOnePartOne()
-    fmt.Println(resultDayOnePartOne)
-    resultDayOnePartTwo := services.DayOnePartTwo()
-    fmt.Println(resultDayOnePartTwo)
+	fmt.Println("Hello there, advent of code 2025")
+	fmt.Println("Day one")
+	resultDayOnePartOne := services.DayOnePartOne()
+	fmt.Println(resultDayOnePartOne)
+	resultDayOnePartTwo := services.DayOnePartTwo()
+	fmt.Println(resultDayOnePartTwo)
+
+	fmt.Println("Day two")
+	resultDayTwoPartOne := services.DayTwoPartOne()
+	fmt.Println(resultDayTwoPartOne)
+	//resultDayTwoPartTwo := services.DayTwoPartTwo()
+	//fmt.Println(resultDayTwoPartTwo)
 }
