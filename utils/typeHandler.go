@@ -42,3 +42,17 @@ func SplitArrayOfStringByIndex(strArr []string, ind int) ([]string, []string) {
 
 	return arrayLeft, arrayRight
 }
+
+func StringToArrayOfInt(str string) []int {
+	var intArray []int
+
+	for i := 0; i < len(str); i++ {
+		intArray = append(intArray, StringToInt(string(str[i])))
+	}
+
+	return intArray
+}
+
+func JoinTwoNumbers(i int, j int) int {
+	return i*10 + j
+}
