@@ -10,6 +10,14 @@ func StringToArray(str string, sep string) []string {
 	return strings.Split(str, sep)
 }
 
+func ArrayStringToArrayByte(arr []string) [][]byte {
+	grid := make([][]byte, len(arr))
+	for i, line := range arr {
+		grid[i] = []byte(line)
+	}
+	return grid
+}
+
 func StringToInt(str string) int {
 	intConverted, err := strconv.Atoi(str)
 	if err != nil {

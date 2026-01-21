@@ -24,4 +24,10 @@ func main() {
 	fmt.Println(resultDayThreePartOne)
 	resultDayThreePartTwo := services.DayThreePartTwo()
 	fmt.Println(resultDayThreePartTwo)
+
+	fmt.Println("Day four")
+	resultDayFourPartOne := services.DayFourPartOne()
+	fmt.Println(resultDayFourPartOne)
+	resultDayFourPartTwo := services.DayFourPartTwo()
+	fmt.Println(resultDayFourPartTwo)
 }
