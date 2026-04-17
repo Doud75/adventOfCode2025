@@ -18,6 +18,18 @@ func ArrayStringToArrayByte(arr []string) [][]byte {
 	return grid
 }
 
+func ArrayStringToArrayInt(arr []string) []int {
+	var result []int
+
+	for _, line := range arr {
+		n, err := strconv.Atoi(line)
+		if err == nil {
+			result = append(result, n)
+		}
+	}
+	return result
+}
+
 func StringToInt(str string) int {
 	intConverted, err := strconv.Atoi(str)
 	if err != nil {

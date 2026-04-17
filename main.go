@@ -51,4 +51,10 @@ func main() {
 		resultDayFivePartTwo := services.DayFivePartTwo()
 		fmt.Println(resultDayFivePartTwo)
 	}
+
+	if *day == 0 || *day == 6 {
+		fmt.Println("Day six")
+		resultDaySixPartOne := services.DaySixPartOne()
+		fmt.Println(resultDaySixPartOne)
+	}
 }
